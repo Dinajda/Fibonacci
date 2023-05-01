@@ -9,8 +9,8 @@ public class Main {
         if(useManyThreads) {
             Thread numLaunchingThread = new Thread(brr);
             Thread num2LaunchingThread = new Thread(wee);
-            numLaunchingThread.start();
-            num2LaunchingThread.start();
+            numLaunchingThread.run();
+            num2LaunchingThread.run();
 
         }
         else {
