@@ -21,7 +21,7 @@ public class FibonacciLike implements Fibonacci, Runnable{
             number1 = number2;
             number2 = num3;
              try{
-                 Thread.sleep(0);
+                 Thread.currentThread().sleep(0);
              } catch (Exception ex) {
                  Thread.currentThread().interrupt();
              }
